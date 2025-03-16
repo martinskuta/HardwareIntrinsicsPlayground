@@ -11,7 +11,7 @@ public class SumBenchmarks
 {
     private int[] _dataToSum = null!;
 
-    [Params(100, 1_000, 1_000_000)] public int Size { get; set; }
+    [Params(100, 1_000, 10_000)] public int Size { get; set; }
 
     [GlobalSetup]
     public void Setup()

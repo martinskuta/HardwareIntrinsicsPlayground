@@ -10,14 +10,14 @@ using HardwareIntrinsicsPlayground.Sum;
 
 SanityCheck();
 
-//BenchmarkRunner.Run<SumBenchmarks>();
+BenchmarkRunner.Run<SumBenchmarks>();
 BenchmarkRunner.Run<HashingBenchmark>();
 return;
 
 static void SanityCheck()
 {
     //Sanity check
-    var sumBenchmarks = new SumBenchmarks { Size = 1000 };
+    var sumBenchmarks = new SumBenchmarks { Size = 10_000 };
     sumBenchmarks.Setup();
 
     var expected = sumBenchmarks.SumLinq();

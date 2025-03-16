@@ -11,26 +11,26 @@ Snapdragon(R) X 12-core X1E80100 @ 3.40 GHz, 3417 Mhz, 12 Core(s), 12 Logical Pr
 DefaultJob : .NET 9.0.2 (9.0.225.6610), Arm64 RyuJIT AdvSIMD
 
 
-| Method              | Size    | Mean           | Error          | StdDev         | Median         | Allocated |
-|-------------------- |-------- |---------------:|---------------:|---------------:|---------------:|----------:|
-| SumForeach          | 100     |      35.274 ns |      0.3993 ns |      0.3334 ns |      35.126 ns |         - |
-| SumLinq             | 100     |       9.801 ns |      0.0802 ns |      0.0750 ns |       9.756 ns |         - |
-| SumUnrolledSafe     | 100     |      19.767 ns |      0.0342 ns |      0.0285 ns |      19.762 ns |         - |
-| SumUnrolledUnsafe   | 100     |      15.140 ns |      0.0174 ns |      0.0136 ns |      15.140 ns |         - |
-| SumVectorT          | 100     |      14.495 ns |      0.5826 ns |      1.7179 ns |      14.364 ns |         - |
-| SumVectorizedSse2   | 100     |             NA |             NA |             NA |             NA |        NA |
-| SumVectorizedArmAdv | 100     |       6.418 ns |      0.3028 ns |      0.8927 ns |       5.703 ns |         - |
-| SumForeach          | 1000    |     315.359 ns |      5.7052 ns |      6.7917 ns |     313.285 ns |         - |
-| SumLinq             | 1000    |     180.479 ns |      0.2160 ns |      0.2020 ns |     180.445 ns |         - |
-| SumUnrolledSafe     | 1000    |     249.724 ns |      4.8948 ns |      6.0112 ns |     247.922 ns |         - |
-| SumUnrolledUnsafe   | 1000    |     240.353 ns |      0.1830 ns |      0.1528 ns |     240.366 ns |         - |
-| SumVectorT          | 1000    |     158.574 ns |      5.7668 ns |     17.0034 ns |     168.475 ns |         - |
-| SumVectorizedSse2   | 1000    |             NA |             NA |             NA |             NA |        NA |
-| SumVectorizedArmAdv | 1000    |      87.661 ns |      0.1135 ns |      0.1006 ns |      87.654 ns |         - |
-| SumForeach          | 1000000 | 319,059.966 ns |  5,029.0248 ns |  5,589.7478 ns | 317,750.635 ns |         - |
-| SumLinq             | 1000000 |             NA |             NA |             NA |             NA |        NA |
-| SumUnrolledSafe     | 1000000 | 283,375.990 ns | 10,637.7592 ns | 31,365.6753 ns | 258,720.923 ns |         - |
-| SumUnrolledUnsafe   | 1000000 | 253,784.609 ns |    395.6693 ns |    370.1093 ns | 253,760.791 ns |         - |
-| SumVectorT          | 1000000 | 167,883.509 ns |    433.9706 ns |    405.9364 ns | 167,810.913 ns |         - |
-| SumVectorizedSse2   | 1000000 |             NA |             NA |             NA |             NA |        NA |
-| SumVectorizedArmAdv | 1000000 | 125,675.368 ns |    288.5930 ns |    255.8302 ns | 125,639.233 ns |         - |
+| Method              | Size  | Mean         | Error      | StdDev      | Median       | Allocated |
+|-------------------- |------ |-------------:|-----------:|------------:|-------------:|----------:|
+| SumForeach          | 100   |    35.028 ns |  0.2163 ns |   0.1689 ns |    34.987 ns |         - |
+| SumLinq             | 100   |    11.604 ns |  0.3564 ns |   1.0509 ns |    11.674 ns |         - |
+| SumUnrolledSafe     | 100   |    25.017 ns |  0.0160 ns |   0.0142 ns |    25.020 ns |         - |
+| SumUnrolledUnsafe   | 100   |    16.143 ns |  0.6169 ns |   1.8189 ns |    14.798 ns |         - |
+| SumVectorT          | 100   |    15.514 ns |  0.7266 ns |   2.1425 ns |    16.405 ns |         - |
+| SumVectorizedSse2   | 100   |           NA |         NA |          NA |           NA |        NA |
+| SumVectorizedArmAdv | 100   |     6.977 ns |  0.3108 ns |   0.9165 ns |     6.622 ns |         - |
+| SumForeach          | 1000  |   313.828 ns |  0.6958 ns |   1.1815 ns |   313.592 ns |         - |
+| SumLinq             | 1000  |   180.025 ns |  0.2210 ns |   0.1959 ns |   180.035 ns |         - |
+| SumUnrolledSafe     | 1000  |   266.949 ns |  9.4606 ns |  27.8947 ns |   248.129 ns |         - |
+| SumUnrolledUnsafe   | 1000  |   240.019 ns |  0.3489 ns |   0.3263 ns |   240.041 ns |         - |
+| SumVectorT          | 1000  |   160.335 ns |  5.7922 ns |  17.0785 ns |   175.100 ns |         - |
+| SumVectorizedSse2   | 1000  |           NA |         NA |          NA |           NA |        NA |
+| SumVectorizedArmAdv | 1000  |    87.257 ns |  0.1415 ns |   0.1323 ns |    87.208 ns |         - |
+| SumForeach          | 10000 | 3,171.586 ns |  2.7531 ns |   2.2990 ns | 3,172.172 ns |         - |
+| SumLinq             | 10000 | 1,798.816 ns |  0.9824 ns |   0.8203 ns | 1,799.032 ns |         - |
+| SumUnrolledSafe     | 10000 | 2,539.590 ns |  4.6106 ns |   3.8501 ns | 2,539.126 ns |         - |
+| SumUnrolledUnsafe   | 10000 | 2,520.971 ns |  2.2738 ns |   1.8987 ns | 2,521.076 ns |         - |
+| SumVectorT          | 10000 | 1,534.463 ns | 54.8917 ns | 161.8495 ns | 1,676.922 ns |         - |
+| SumVectorizedSse2   | 10000 |           NA |         NA |          NA |           NA |        NA |
+| SumVectorizedArmAdv | 10000 | 1,209.328 ns |  0.9282 ns |   0.8683 ns | 1,209.470 ns |         - |
