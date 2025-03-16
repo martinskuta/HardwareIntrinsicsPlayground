@@ -1,0 +1,98 @@
+# Exclude all these where-ever they are (no slash in pattern).
+*.suo
+*.user
+[Bb]in
+[Dd]ebug
+[Rr]elease
+obj
+Output
+*.v2.ncrunchproject
+*.v2.ncrunchsolution
+diff.txt
+
+Build/build/*.aps
+Build/build/*.eto
+
+/_ReSharper.*
+packages/*
+_NCrunch_skyeEditor/*
+.nuget/NuGet.exe
+
+# Cake Packages Directory
+artifacts/*
+dotCover/*
+tools/*
+!tools/packages.config
+!tools/dropbox-upload.ps1
+
+# Nuke tmp folder
+**/.nuke/temp/
+
+#Ignore files created by Rider IDE
+#See: https://www.jetbrains.com/help/rider/Directory_Based_Settings.html#project-level
+
+# User-specific stuff
+**/.idea/**/workspace.xml
+**/.idea/**/tasks.xml
+**/.idea/**/usage.statistics.xml
+**/.idea/**/dictionaries
+**/.idea/**/shelf
+
+# AWS User-specific
+**/.idea/**/aws.xml
+
+# Generated files
+**/.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+**/.idea/**/dataSources/
+**/.idea/**/dataSources.ids
+**/.idea/**/dataSources.local.xml
+**/.idea/**/sqlDataSources.xml
+**/.idea/**/dynamic.xml
+**/.idea/**/uiDesigner.xml
+**/.idea/**/dbnavigator.xml
+
+# Gradle
+**/.idea/**/gradle.xml
+**/.idea/**/libraries
+
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin
+**/.idea/**/mongoSettings.xml
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+**/.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+**/.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+**/.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+**/.idea/caches/build_file_checksums.ser
+
+#Ignore files created by Visual Studio 2017
+.vs/
+NDependOut/
+.vscode/
+*.pubxml
+launchSettings.json
