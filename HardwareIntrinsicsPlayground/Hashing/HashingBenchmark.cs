@@ -74,4 +74,10 @@ public class HashingBenchmark
     {
         return Convert.ToBase64String(System.IO.Hashing.XxHash128.Hash(_data));
     }
+
+    [Benchmark]
+    public string Sha256Incremental()
+    {
+        return Convert.ToBase64String(Services.CalculateIncrementalSha256Hash(_data));
+    }
 }

@@ -12,15 +12,16 @@ Snapdragon(R) X 12-core X1E80100 @ 3.40 GHz, 3417 Mhz, 12 Core(s), 12 Logical Pr
 DefaultJob : .NET 9.0.2 (9.0.225.6610), Arm64 RyuJIT AdvSIMD
 
 
-| Method    | Mean        | Error     | StdDev    | Median      | Allocated |
-|---------- |------------:|----------:|----------:|------------:|----------:|
-| Crc32     |    40.62 us |  0.033 us |  0.028 us |    40.61 us |      72 B |
-| Crc64     |    39.85 us |  0.792 us |  1.820 us |    40.56 us |      72 B |
-| Md5       | 2,244.08 us | 36.833 us | 40.940 us | 2,230.24 us |     112 B |
-| Sha1      | 1,645.64 us |  1.537 us |  1.284 us | 1,645.68 us |     129 B |
-| Sha256    |   429.37 us |  0.479 us |  0.470 us |   429.24 us |     168 B |
-| Sha512    | 2,352.35 us |  7.737 us |  7.598 us | 2,350.64 us |     288 B |
-| XxHash3   |    37.77 us |  0.782 us |  1.450 us |    38.42 us |      80 B |
-| XxHash32  |   124.43 us |  4.029 us | 11.879 us |   115.75 us |      72 B |
-| XxHash64  |   108.59 us |  2.152 us |  3.155 us |   107.63 us |      80 B |
-| XxHash128 |    38.34 us |  0.696 us |  0.651 us |    38.50 us |     112 B |
+| Method            | Mean        | Error    | StdDev   | Allocated |
+|------------------ |------------:|---------:|---------:|----------:|
+| Crc32             |    33.02 us | 0.635 us | 0.756 us |      72 B |
+| Crc64             |    32.52 us | 0.048 us | 0.045 us |      72 B |
+| Md5               | 1,909.38 us | 2.076 us | 1.734 us |     113 B |
+| Sha1              | 1,408.64 us | 1.339 us | 1.187 us |     129 B |
+| Sha256            |   367.64 us | 0.355 us | 0.296 us |     168 B |
+| Sha256Incremental |   367.83 us | 0.325 us | 0.304 us |     304 B |
+| Sha512            | 1,888.41 us | 1.592 us | 1.329 us |     288 B |
+| XxHash3           |    30.82 us | 0.028 us | 0.024 us |      80 B |
+| XxHash32          |   115.86 us | 0.124 us | 0.116 us |      72 B |
+| XxHash64          |   107.84 us | 0.095 us | 0.084 us |      80 B |
+| XxHash128         |    30.83 us | 0.039 us | 0.034 us |     112 B |
