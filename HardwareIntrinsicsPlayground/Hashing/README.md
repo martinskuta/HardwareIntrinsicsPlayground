@@ -19,7 +19,6 @@ DefaultJob : .NET 9.0.2 (9.0.225.6610), Arm64 RyuJIT AdvSIMD
 | Md5               | 1,909.38 us | 2.076 us | 1.734 us |     113 B |
 | Sha1              | 1,408.64 us | 1.339 us | 1.187 us |     129 B |
 | Sha256            |   367.64 us | 0.355 us | 0.296 us |     168 B |
-| Sha256Incremental |   367.83 us | 0.325 us | 0.304 us |     304 B |
 | Sha512            | 1,888.41 us | 1.592 us | 1.329 us |     288 B |
 | XxHash3           |    30.82 us | 0.028 us | 0.024 us |      80 B |
 | XxHash32          |   115.86 us | 0.124 us | 0.116 us |      72 B |
